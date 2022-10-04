@@ -58,6 +58,9 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="a0B-mT-vzB" secondAttribute="bottom" constant="40" id="wSa-2D-75a"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="queryTextField" destination="OnO-oE-JJZ" id="t1g-j2-3qp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
