@@ -27,6 +27,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="oBZ-IY-xVm"/>
                                 </constraints>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -60,11 +61,58 @@
                     </view>
                     <connections>
                         <outlet property="queryTextField" destination="OnO-oE-JJZ" id="t1g-j2-3qp"/>
+                        <segue destination="aZw-Nv-Ph4" kind="presentation" identifier="toPDFPreview" id="V8A-y0-oWN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="132" y="-28"/>
+        </scene>
+        <!--Preview View Controller-->
+        <scene sceneID="BH9-x9-jkL">
+            <objects>
+                <viewController id="aZw-Nv-Ph4" customClass="PDFPreviewViewController" customModule="PDFKitTutorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tAB-e5-wWy">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wSY-6M-pDn">
+                                <rect key="frame" x="0.0" y="709" width="390" height="44"/>
+                                <color key="backgroundColor" red="0.96932212750000002" green="0.96932212750000002" blue="0.96932212750000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <items>
+                                    <barButtonItem systemItem="action" id="lh5-xw-OFZ">
+                                        <connections>
+                                            <action selector="tappedShare:" destination="aZw-Nv-Ph4" id="OKz-98-JxB"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <color key="barTintColor" red="0.97131470959999999" green="0.97131470959999999" blue="0.97131470959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </toolbar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qUV-zt-6zb" customClass="PDFView">
+                                <rect key="frame" x="0.0" y="47" width="390" height="662"/>
+                                <color key="backgroundColor" red="0.97131470959595956" green="0.97131470959595956" blue="0.97131470959595956" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="k1x-7q-KNx"/>
+                        <color key="backgroundColor" red="0.96932212752525249" green="0.96932212752525249" blue="0.96932212752525249" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="k1x-7q-KNx" firstAttribute="trailing" secondItem="qUV-zt-6zb" secondAttribute="trailing" id="AwJ-NR-nwI"/>
+                            <constraint firstItem="qUV-zt-6zb" firstAttribute="top" secondItem="k1x-7q-KNx" secondAttribute="top" id="F1i-dh-mce"/>
+                            <constraint firstItem="wSY-6M-pDn" firstAttribute="leading" secondItem="k1x-7q-KNx" secondAttribute="leading" id="HaS-7U-Itr"/>
+                            <constraint firstItem="wSY-6M-pDn" firstAttribute="top" secondItem="qUV-zt-6zb" secondAttribute="bottom" id="XPR-Vu-l4F"/>
+                            <constraint firstItem="qUV-zt-6zb" firstAttribute="leading" secondItem="k1x-7q-KNx" secondAttribute="leading" id="Xyx-YL-po6"/>
+                            <constraint firstItem="wSY-6M-pDn" firstAttribute="trailing" secondItem="k1x-7q-KNx" secondAttribute="trailing" id="klD-7h-orL"/>
+                            <constraint firstItem="k1x-7q-KNx" firstAttribute="bottom" secondItem="wSY-6M-pDn" secondAttribute="bottom" constant="34" id="qHQ-mG-aZ2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pdfView" destination="qUV-zt-6zb" id="zSI-Ze-r8j"/>
+                        <outlet property="shareButton" destination="lh5-xw-OFZ" id="8c3-rA-dJB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7yJ-Zq-3e0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1034" y="-28"/>
         </scene>
     </scenes>
 </document>

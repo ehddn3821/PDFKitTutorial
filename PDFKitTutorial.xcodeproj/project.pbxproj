@@ -19,6 +19,8 @@
 		3DF96BB128EBD1F600BCD010 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF96BB028EBD1F600BCD010 /* NetworkManager.swift */; };
 		3DF96BB328EBD99B00BCD010 /* Cocktail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF96BB228EBD99B00BCD010 /* Cocktail.swift */; };
 		3DF96BB628EBEEE600BCD010 /* UIGraphicsPDFRendererContextExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF96BB528EBEEE600BCD010 /* UIGraphicsPDFRendererContextExtension.swift */; };
+		3DF96BB828EBF8BC00BCD010 /* PDFPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF96BB728EBF8BC00BCD010 /* PDFPreviewViewController.swift */; };
+		3DF96BBA28EBFCAE00BCD010 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF96BB928EBFCAE00BCD010 /* UIViewControllerExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		3DF96BB028EBD1F600BCD010 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		3DF96BB228EBD99B00BCD010 /* Cocktail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cocktail.swift; sourceTree = "<group>"; };
 		3DF96BB528EBEEE600BCD010 /* UIGraphicsPDFRendererContextExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIGraphicsPDFRendererContextExtension.swift; sourceTree = "<group>"; };
+		3DF96BB728EBF8BC00BCD010 /* PDFPreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFPreviewViewController.swift; sourceTree = "<group>"; };
+		3DF96BB928EBFCAE00BCD010 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,16 +109,17 @@
 		3DF96B7F28EBCC3700BCD010 /* PDFKitTutorial */ = {
 			isa = PBXGroup;
 			children = (
-				3DF96BB428EBEED000BCD010 /* Extension */,
 				3DF96B8028EBCC3700BCD010 /* AppDelegate.swift */,
 				3DF96B8228EBCC3700BCD010 /* SceneDelegate.swift */,
-				3DF96B8428EBCC3700BCD010 /* ViewController.swift */,
-				3DF96B8628EBCC3700BCD010 /* Main.storyboard */,
-				3DF96B8928EBCC3800BCD010 /* Assets.xcassets */,
-				3DF96B8B28EBCC3800BCD010 /* LaunchScreen.storyboard */,
-				3DF96B8E28EBCC3800BCD010 /* Info.plist */,
-				3DF96BB028EBD1F600BCD010 /* NetworkManager.swift */,
 				3DF96BB228EBD99B00BCD010 /* Cocktail.swift */,
+				3DF96B8428EBCC3700BCD010 /* ViewController.swift */,
+				3DF96BB728EBF8BC00BCD010 /* PDFPreviewViewController.swift */,
+				3DF96BB028EBD1F600BCD010 /* NetworkManager.swift */,
+				3DF96B8628EBCC3700BCD010 /* Main.storyboard */,
+				3DF96B8B28EBCC3800BCD010 /* LaunchScreen.storyboard */,
+				3DF96B8928EBCC3800BCD010 /* Assets.xcassets */,
+				3DF96B8E28EBCC3800BCD010 /* Info.plist */,
+				3DF96BB428EBEED000BCD010 /* Extension */,
 			);
 			path = PDFKitTutorial;
 			sourceTree = "<group>";
@@ -140,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				3DF96BB528EBEEE600BCD010 /* UIGraphicsPDFRendererContextExtension.swift */,
+				3DF96BB928EBFCAE00BCD010 /* UIViewControllerExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -277,7 +283,9 @@
 			files = (
 				3DF96BB128EBD1F600BCD010 /* NetworkManager.swift in Sources */,
 				3DF96B8528EBCC3700BCD010 /* ViewController.swift in Sources */,
+				3DF96BB828EBF8BC00BCD010 /* PDFPreviewViewController.swift in Sources */,
 				3DF96BB628EBEEE600BCD010 /* UIGraphicsPDFRendererContextExtension.swift in Sources */,
+				3DF96BBA28EBFCAE00BCD010 /* UIViewControllerExtension.swift in Sources */,
 				3DF96B8128EBCC3700BCD010 /* AppDelegate.swift in Sources */,
 				3DF96BB328EBD99B00BCD010 /* Cocktail.swift in Sources */,
 				3DF96B8328EBCC3700BCD010 /* SceneDelegate.swift in Sources */,

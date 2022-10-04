@@ -9,21 +9,40 @@ import UIKit
 import PDFKit
 
 class ViewController: UIViewController {
+    
+    var pdfData: Data?
 
     @IBOutlet var queryTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        hideKeyboard()
     }
 
     @IBAction func tappedGeneratePDF(_ sender: Any) {
         NetworkManager.shared.getCocktails(searchQuery: queryTextField.text ?? "") { menu in
-            DispatchQueue.main.async {
-                let pdfData = self.generatePDFData(drinks: menu.drinks ?? [])
-                let pdfView = PDFView()
+            if let drinks = menu.drinks {
+                DispatchQueue.main.async {
+                    let pdfData = self.generatePDFData(drinks: drinks)
+                    self.pdfData = pdfData
+                    self.performSegue(withIdentifier: "toPDFPreview", sender: self)
+                }
+            }
+            else {
+                DispatchQueue.main.async {
+                    let ac = UIAlertController(title: nil, message: "No search result.", preferredStyle: .alert)
+                    ac.addAction(UIAlertAction(title: "OK", style: .cancel))
+                    self.present(ac, animated: true)
+                }
             }
         } failure: { error in
             print(error)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? PDFPreviewViewController {
+            vc.documentData = pdfData
         }
     }
     
