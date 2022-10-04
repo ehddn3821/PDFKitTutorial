@@ -16,6 +16,8 @@
 		3DF96B9828EBCC3800BCD010 /* PDFKitTutorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF96B9728EBCC3800BCD010 /* PDFKitTutorialTests.swift */; };
 		3DF96BA228EBCC3800BCD010 /* PDFKitTutorialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF96BA128EBCC3800BCD010 /* PDFKitTutorialUITests.swift */; };
 		3DF96BA428EBCC3800BCD010 /* PDFKitTutorialUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF96BA328EBCC3800BCD010 /* PDFKitTutorialUITestsLaunchTests.swift */; };
+		3DF96BB128EBD1F600BCD010 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF96BB028EBD1F600BCD010 /* NetworkManager.swift */; };
+		3DF96BB328EBD99B00BCD010 /* Cocktail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF96BB228EBD99B00BCD010 /* Cocktail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		3DF96B9D28EBCC3800BCD010 /* PDFKitTutorialUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PDFKitTutorialUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DF96BA128EBCC3800BCD010 /* PDFKitTutorialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFKitTutorialUITests.swift; sourceTree = "<group>"; };
 		3DF96BA328EBCC3800BCD010 /* PDFKitTutorialUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFKitTutorialUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3DF96BB028EBD1F600BCD010 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		3DF96BB228EBD99B00BCD010 /* Cocktail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cocktail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				3DF96B8928EBCC3800BCD010 /* Assets.xcassets */,
 				3DF96B8B28EBCC3800BCD010 /* LaunchScreen.storyboard */,
 				3DF96B8E28EBCC3800BCD010 /* Info.plist */,
+				3DF96BB028EBD1F600BCD010 /* NetworkManager.swift */,
+				3DF96BB228EBD99B00BCD010 /* Cocktail.swift */,
 			);
 			path = PDFKitTutorial;
 			sourceTree = "<group>";
@@ -258,8 +264,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DF96BB128EBD1F600BCD010 /* NetworkManager.swift in Sources */,
 				3DF96B8528EBCC3700BCD010 /* ViewController.swift in Sources */,
 				3DF96B8128EBCC3700BCD010 /* AppDelegate.swift in Sources */,
+				3DF96BB328EBD99B00BCD010 /* Cocktail.swift in Sources */,
 				3DF96B8328EBCC3700BCD010 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
