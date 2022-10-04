@@ -15,5 +15,8 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func tappedGeneratePDF(_ sender: Any) {
+        
+    }
 }
 

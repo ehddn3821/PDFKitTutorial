@@ -36,14 +36,26 @@
                                 <color key="textColor" red="0.3602012398969866" green="0.11479329823181589" blue="0.59674873737373735" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a0B-mT-vzB">
+                                <rect key="frame" x="107.66666666666669" y="727" width="175" height="43"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Generate PDF">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="24"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="tappedGeneratePDF:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dy5-RT-jV8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.98544034090909094" green="0.98544034090909094" blue="0.98544034090909094" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="OnO-oE-JJZ" firstAttribute="top" secondItem="z7Y-M6-ayC" secondAttribute="bottom" constant="30" id="1uF-dz-IIM"/>
                             <constraint firstItem="OnO-oE-JJZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5Lf-2g-YKC"/>
+                            <constraint firstItem="a0B-mT-vzB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OW4-mi-rt8"/>
                             <constraint firstItem="OnO-oE-JJZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gWm-2z-KFp"/>
                             <constraint firstItem="z7Y-M6-ayC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vJc-wv-gur"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="a0B-mT-vzB" secondAttribute="bottom" constant="40" id="wSa-2D-75a"/>
                         </constraints>
                     </view>
                 </viewController>
